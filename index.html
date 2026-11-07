@@ -3,10 +3,21 @@
 <meta name="description" content="In Sao Việt: in offset sách, catalogue và bao bì tại Hà Nội, hơn 20 năm kinh nghiệm.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <title>Công ty In Sao Việt</title>
+<link rel="canonical" href="https://insaoviet.com/">
+<link rel="alternate" hreflang="vi" href="https://insaoviet.com/"><link rel="alternate" hreflang="en" href="https://insaoviet.com/en/"><link rel="alternate" hreflang="x-default" href="https://insaoviet.com/en/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sao Viet Printing">
+<meta property="og:title" content="Công ty In Sao Việt">
+<meta property="og:description" content="In Sao Việt: in offset sách, catalogue và bao bì tại Hà Nội, hơn 20 năm kinh nghiệm.">
+<meta property="og:url" content="https://insaoviet.com/">
+<meta property="og:image" content="https://insaoviet.com/img/og-image.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sao Viet Printing – offset book printing since 2006, Hanoi, Vietnam">
+<meta property="og:locale" content="vi_VN"><meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<link rel="preload" href="/fonts/archivo-400-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/fonts/fonts.css">
 <style>
 /* Layout: the page is a press sheet. Each section sits between crop marks, a CMYK colour bar
    runs along the hero, and specs are set in mono like a job ticket. One accent, used sparingly. */
@@ -162,6 +173,7 @@ table{border-collapse:collapse;width:100%;min-width:520px;font-size:.92rem}
 th,td{text-align:left;padding:.85rem 1rem;border-bottom:1px solid var(--rule);vertical-align:top}
 thead th{font:500 .72rem/1 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);background:var(--paper)}
 td:first-child{font-weight:600;white-space:nowrap}
+table.t2{min-width:0}
 td.mono{font-family:var(--f-mono);font-size:.85rem;font-variant-numeric:tabular-nums}
 tr:last-child td{border-bottom:0}
 .caps-note{margin-top:1rem;font-size:var(--s-1);color:var(--ink-2)}
@@ -231,6 +243,9 @@ tr:last-child td{border-bottom:0}
 .quote .col>p{color:var(--ink-2);margin-top:1rem;max-width:44ch}
 .contact-list{margin-top:2rem;display:grid;gap:1rem;font-size:.95rem}
 .contact-list div{display:grid;gap:.15rem}
+.contact-list a{color:inherit;text-decoration:underline;text-decoration-color:var(--rule);text-underline-offset:3px}
+.contact-list a:hover{color:var(--accent);text-decoration-color:currentColor}
+.contact-list .alt{display:flex;flex-wrap:wrap;gap:.4rem 1rem;margin-top:.35rem;font-size:.88rem}
 .contact-list span:first-child{font:500 .72rem/1 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
 form.ticket{background:var(--sheet);border:1px solid var(--rule);padding:clamp(1.25rem,3vw,2rem);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem 1.25rem}
 .ticket .full{grid-column:1/-1}
@@ -255,6 +270,8 @@ footer .wrap{padding-block:3.5rem 2rem}
 .foot a:hover{color:var(--accent)}
 .foot p{color:var(--band-2);max-width:36ch;margin-top:1rem}
 .foot .logo small{color:var(--band-2)}
+.legal a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.legal a:hover{color:var(--band-fg)}
 .legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;margin-top:3rem;padding-top:1.5rem;border-top:1px solid color-mix(in srgb,var(--band-fg) 18%,transparent);color:var(--band-2);font-size:.8rem}
 @media (max-width:820px){.foot{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
@@ -380,14 +397,14 @@ body.editing{padding-bottom:6rem}
       <div class="img"><img src="img/caps.jpg" alt="Dây chuyền sản xuất"></div>
       <div>
         <div class="table-wrap">
-          <table>
-            <thead><tr><th scope="col">Công đoạn</th><th scope="col">Thiết bị</th><th scope="col"><br></th></tr></thead>
+          <table class="t2">
+            <thead><tr><th scope="col">Công đoạn</th><th scope="col">Thiết bị</th></tr></thead>
             <tbody>
-              <tr><td>Chế bản</td><td>Máy ra kẽm CTP</td><td><br></td></tr>
-              <tr><td>In ấn</td><td>Máy in Heidelberg, Komori, Akiyama</td><td><br></td></tr>
-              <tr><td>Đóng sách</td><td>Sách khâu chỉ, phay keo, ghim gáy, bìa cứng, bồi cứng, lò xo</td><td><br></td></tr>
-              <tr><td>Gia công sau in</td><td>Cán màng, UV, ép nhũ, dập nổi, bế, etc.</td><td><br></td></tr>
-              <tr><td>Giấy</td><td>Nguyên vật liệu nhập khẩu lưu kho sẵn</td><td><br></td></tr>
+              <tr><td>Chế bản</td><td>Máy ra kẽm CTP</td></tr>
+              <tr><td>In ấn</td><td>Máy in Heidelberg, Komori, Akiyama</td></tr>
+              <tr><td>Đóng sách</td><td>Sách khâu chỉ, phay keo, ghim gáy, bìa cứng, bồi cứng, lò xo</td></tr>
+              <tr><td>Gia công sau in</td><td>Cán màng, UV, ép nhũ, dập nổi, bế, etc.</td></tr>
+              <tr><td>Giấy</td><td>Nguyên vật liệu nhập khẩu lưu kho sẵn</td></tr>
             </tbody>
           </table>
         </div>
@@ -405,8 +422,8 @@ body.editing{padding-bottom:6rem}
         <h2 id="quote-h" style="margin-top:1rem">Cho chúng tôi biết về cuốn sách của bạn.</h2>
         <p>Gửi thông số cơ bản, chúng tôi sẽ phản hồi báo giá và lịch sản xuất trong 1 ngày làm việc.</p>
         <div class="contact-list">
-          <div><span>Email</span><span>insaoviet2006@gmail.com</span></div>
-          <div><span>Điện thoại / Zalo</span><span>+84 94 415 8460</span></div>
+          <div><span>Email</span><span><a href="mailto:insaoviet2006@gmail.com">insaoviet2006@gmail.com</a></span></div>
+          <div><span>Điện thoại / Zalo / WhatsApp</span><span><a href="tel:+84944158460">+84 94 415 8460</a><span class="alt"><a href="https://zalo.me/84944158460" target="_blank" rel="noopener">Nhắn Zalo</a><a href="https://wa.me/84944158460" target="_blank" rel="noopener">Nhắn WhatsApp</a></span></span></div>
           <div><span>Nhà xưởng</span><span>Lô 7.2.1, KCN Thạch Thất, Phùng Xá, Hà Nội</span></div>
         </div>
       </div>
@@ -425,6 +442,7 @@ body.editing{padding-bottom:6rem}
         <div class="field"><label for="q-colour">Số màu (bìa / ruột)</label><input id="q-colour" name="colour" placeholder="4+0 / 1+1"></div>
         <div class="field"><label for="q-paper">Giấy ruột</label><input id="q-paper" name="paper" placeholder="Fort 80 gsm"></div>
         <div class="field full"><label for="q-notes">Gia công, nơi giao hàng, thời hạn</label><textarea id="q-notes" name="notes" rows="3" placeholder="Cán màng mờ, UV định vị bìa, giao tại kho Hà Nội, cần trước tháng 3"></textarea></div>
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
         <div class="submit">
           <button class="btn primary" type="submit">Gửi yêu cầu</button>
           <span class="status" id="q-status" role="status"></span>
@@ -444,9 +462,9 @@ body.editing{padding-bottom:6rem}
       </div>
       <div><h4>Sản phẩm</h4><ul><li><a href="#products">Sách bìa cứng</a></li><li><a href="#products">Sách bìa mềm</a></li><li><a href="#products">Sách thiếu nhi</a></li><li><a href="#products">Bao bì</a></li></ul></div>
       <div><h4>Công ty</h4><ul><li><a href="#about">Giới thiệu</a></li><li><a href="#capabilities">Năng lực</a></li></ul></div>
-      <div><h4>Liên hệ</h4><ul><li><a href="#quote">Yêu cầu báo giá</a></li><li><span>SĐT: +84 94 415 8460</span></li><li><span>Mail: insaoviet2006@gmail.com</span></li></ul></div>
+      <div><h4>Liên hệ</h4><ul><li><a href="#quote">Yêu cầu báo giá</a></li><li><a href="tel:+84944158460">SĐT: +84 94 415 8460</a></li><li><a href="https://wa.me/84944158460" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="mailto:insaoviet2006@gmail.com">Mail: insaoviet2006@gmail.com</a></li></ul></div>
     </div>
-    <div class="legal"><span>© 2026&nbsp;Sao Việt. Bảo lưu mọi quyền.</span><span>Chính sách bảo mật · Điều khoản</span><span><br></span></div>
+    <div class="legal"><span>© 2026&nbsp;Sao Việt. Bảo lưu mọi quyền.</span><span><a href="/chinh-sach-bao-mat.html">Chính sách bảo mật</a> · <a href="/dieu-khoan.html">Điều khoản sử dụng</a></span><span><br></span></div>
   </div>
 </footer>
 
@@ -459,12 +477,20 @@ body.editing{padding-bottom:6rem}
   nav.addEventListener('click',function(e){if(e.target.tagName==='A'){nav.classList.remove('open');mb.setAttribute('aria-expanded','false')}});
   document.getElementById('quote-form').addEventListener('submit',function(e){
     e.preventDefault();
-    var f=this,s=document.getElementById('q-status');
+    var f=this,s=document.getElementById('q-status'),btn=f.querySelector('button[type=submit]');
     var n=document.getElementById('q-name'),m=document.getElementById('q-email');
-    if(!n.value.trim()||!m.value.includes('@')){s.textContent='Hãy nhập họ tên và một địa chỉ email hợp lệ.';(n.value.trim()?m:n).focus();return}
-    var lines=[].map.call(f.querySelectorAll('input,select,textarea'),function(el){var l=f.querySelector('label[for="'+el.id+'"]');return (l?l.textContent.trim():el.id)+': '+el.value}).join('\n');
-    location.href='mailto:insaoviet2006@gmail.com?subject='+encodeURIComponent('Yêu cầu báo giá'+' - '+n.value.trim())+'&body='+encodeURIComponent(lines);
-    s.textContent='Ứng dụng email của bạn đang mở với nội dung yêu cầu. Nếu không mở được, hãy gửi tới insaoviet2006@gmail.com.';
+    if(!n.value.trim()||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(m.value.trim())){s.textContent='Hãy nhập họ tên và một địa chỉ email hợp lệ.';(n.value.trim()?m:n).focus();return}
+    if(f.querySelector('[name=_honey]').value)return;
+    var subject='Yêu cầu báo giá - '+n.value.trim(),data={_subject:subject,_template:'table',_captcha:'false'},lines=[];
+    [].forEach.call(f.querySelectorAll('input,select,textarea'),function(el){if(!el.id)return;var l=f.querySelector('label[for="'+el.id+'"]'),k=l?l.textContent.trim():el.id;data[k]=el.value;lines.push(k+': '+el.value)});
+    data._replyto=m.value.trim();
+    var mailto=function(){location.href='mailto:insaoviet2006@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(lines.join('\n'))};
+    btn.disabled=true;s.textContent='Đang gửi…';
+    fetch('https://formsubmit.co/ajax/insaoviet2006@gmail.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)})
+      .then(function(r){return r.json().then(function(j){if(!r.ok||String(j.success)!=='true')throw j})})
+      .then(function(){s.textContent='Cảm ơn bạn! Yêu cầu đã được gửi, chúng tôi sẽ phản hồi trong 1 ngày làm việc.';f.reset()})
+      .catch(function(){s.textContent='Chưa gửi được. Ứng dụng email của bạn đang mở với nội dung đã điền sẵn, hoặc hãy gửi tới insaoviet2006@gmail.com.';mailto()})
+      .then(function(){btn.disabled=false});
   });
 })();
 </script>
