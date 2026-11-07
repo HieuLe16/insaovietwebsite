@@ -3,10 +3,21 @@
 <meta name="description" content="Sao Viet Printing: offset printing of books, catalogues and packaging in Hanoi, Vietnam, for over 20 years.">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml"><link rel="icon" href="../favicon-32.png" type="image/png" sizes="32x32"><link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <title>Sao Viet Printing</title>
+<link rel="canonical" href="https://insaoviet.com/en/">
+<link rel="alternate" hreflang="vi" href="https://insaoviet.com/"><link rel="alternate" hreflang="en" href="https://insaoviet.com/en/"><link rel="alternate" hreflang="x-default" href="https://insaoviet.com/en/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sao Viet Printing">
+<meta property="og:title" content="Sao Viet Printing">
+<meta property="og:description" content="Sao Viet Printing: offset printing of books, catalogues and packaging in Hanoi, Vietnam, for over 20 years.">
+<meta property="og:url" content="https://insaoviet.com/en/">
+<meta property="og:image" content="https://insaoviet.com/img/og-image.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sao Viet Printing – offset book printing since 2006, Hanoi, Vietnam">
+<meta property="og:locale" content="en_US"><meta property="og:locale:alternate" content="vi_VN">
+<meta name="twitter:card" content="summary_large_image">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<link rel="preload" href="/fonts/archivo-400-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/fonts/fonts.css">
 <style>
 /* Layout: the page is a press sheet. Each section sits between crop marks, a CMYK colour bar
    runs along the hero, and specs are set in mono like a job ticket. One accent, used sparingly. */
@@ -229,6 +240,9 @@ tr:last-child td{border-bottom:0}
 .quote .col>p{color:var(--ink-2);margin-top:1rem;max-width:44ch}
 .contact-list{margin-top:2rem;display:grid;gap:1rem;font-size:.95rem}
 .contact-list div{display:grid;gap:.15rem}
+.contact-list a{color:inherit;text-decoration:underline;text-decoration-color:var(--rule);text-underline-offset:3px}
+.contact-list a:hover{color:var(--accent);text-decoration-color:currentColor}
+.contact-list .alt{display:flex;flex-wrap:wrap;gap:.4rem 1rem;margin-top:.35rem;font-size:.88rem}
 .contact-list span:first-child{font:500 .72rem/1 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
 form.ticket{background:var(--sheet);border:1px solid var(--rule);padding:clamp(1.25rem,3vw,2rem);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem 1.25rem}
 .ticket .full{grid-column:1/-1}
@@ -253,6 +267,8 @@ footer .wrap{padding-block:3.5rem 2rem}
 .foot a:hover{color:var(--accent)}
 .foot p{color:var(--band-2);max-width:36ch;margin-top:1rem}
 .foot .logo small{color:var(--band-2)}
+.legal a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.legal a:hover{color:var(--band-fg)}
 .legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;margin-top:3rem;padding-top:1.5rem;border-top:1px solid color-mix(in srgb,var(--band-fg) 18%,transparent);color:var(--band-2);font-size:.8rem}
 @media (max-width:820px){.foot{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
@@ -455,8 +471,8 @@ body.editing{padding-bottom:6rem}
         <h2 id="quote-h" style="margin-top:1rem">Tell us about your book.</h2>
         <p>Send the basic specification and we will reply with a price and a production schedule</p>
         <div class="contact-list">
-          <div><span>Email</span><span>insaoviet2006@gmail.com</span></div>
-          <div><span>Phone / WhatsApp</span><span>+84 94 415 8460 (Whatsapp)</span></div>
+          <div><span>Email</span><span><a href="mailto:insaoviet2006@gmail.com">insaoviet2006@gmail.com</a></span></div>
+          <div><span>Phone / WhatsApp</span><span><a href="tel:+84944158460">+84 94 415 8460</a><span class="alt"><a href="https://wa.me/84944158460" target="_blank" rel="noopener">Message us on WhatsApp</a></span></span></div>
           <div><span>Factory</span><span>Lot 7.2.1, Thach That Industrial Zone, Hanoi</span></div>
         </div>
       </div>
@@ -475,6 +491,7 @@ body.editing{padding-bottom:6rem}
         <div class="field"><label for="q-colour">Colours (cover / text)</label><input id="q-colour" name="colour" placeholder="4+0 / 1+1"></div>
         <div class="field"><label for="q-paper">Paper (text)</label><input id="q-paper" name="paper" placeholder="80 gsm uncoated woodfree"></div>
         <div class="field full"><label for="q-notes">Finishing, delivery port, deadline</label><textarea id="q-notes" name="notes" rows="3" placeholder="Matt lamination, spot UV on cover, CIF Felixstowe, ship by March"></textarea></div>
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
         <div class="submit">
           <button class="btn primary" type="submit">Send request</button>
           <span class="status" id="q-status" role="status"></span>
@@ -494,9 +511,9 @@ body.editing{padding-bottom:6rem}
       </div>
       <div><h4>Print</h4><ul><li><a href="#products">Hardcover books</a></li><li><a href="#products">Paperbacks</a></li><li><a href="#products">Children's books</a></li><li><a href="#products">Packaging</a></li></ul></div>
       <div><h4>Company</h4><ul><li><a href="#about">About</a></li><li><a href="#sustainability">Sustainability</a></li></ul></div>
-      <div><h4>Contact</h4><ul><li><a href="#quote">Request a quote</a></li><li><span>Hotline: +84 94 415 8460</span></li><li><span>Mail: insaoviet2006@gmail.com</span></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="#quote">Request a quote</a></li><li><a href="tel:+84944158460">Hotline: +84 94 415 8460</a></li><li><a href="https://wa.me/84944158460" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="mailto:insaoviet2006@gmail.com">Mail: insaoviet2006@gmail.com</a></li></ul></div>
     </div>
-    <div class="legal"><span>© 2026&nbsp;Sao Viet. All rights reserved.</span><span>Privacy · Terms</span><span>Ảnh mẫu từ Unsplash: Bank Phrom, Srdjan Ivankovic, Tim Wildsmith, Kimberly Farmer, Annie Spratt, True Agency, Rita Morais, Giorgio Trovato, Andrew Pons.</span></div>
+    <div class="legal"><span>© 2026&nbsp;Sao Viet. All rights reserved.</span><span><a href="/en/privacy.html">Privacy Policy</a> · <a href="/en/terms.html">Terms of Use</a></span><span>Ảnh mẫu từ Unsplash: Bank Phrom, Srdjan Ivankovic, Tim Wildsmith, Kimberly Farmer, Annie Spratt, True Agency, Rita Morais, Giorgio Trovato, Andrew Pons.</span></div>
   </div>
 </footer>
 
@@ -509,12 +526,20 @@ body.editing{padding-bottom:6rem}
   nav.addEventListener('click',function(e){if(e.target.tagName==='A'){nav.classList.remove('open');mb.setAttribute('aria-expanded','false')}});
   document.getElementById('quote-form').addEventListener('submit',function(e){
     e.preventDefault();
-    var f=this,s=document.getElementById('q-status');
+    var f=this,s=document.getElementById('q-status'),btn=f.querySelector('button[type=submit]');
     var n=document.getElementById('q-name'),m=document.getElementById('q-email');
-    if(!n.value.trim()||!m.value.includes('@')){s.textContent='Add your name and a valid email address.';(n.value.trim()?m:n).focus();return}
-    var lines=[].map.call(f.querySelectorAll('input,select,textarea'),function(el){var l=f.querySelector('label[for="'+el.id+'"]');return (l?l.textContent.trim():el.id)+': '+el.value}).join('\n');
-    location.href='mailto:insaoviet2006@gmail.com?subject='+encodeURIComponent('Quote request'+' - '+n.value.trim())+'&body='+encodeURIComponent(lines);
-    s.textContent='Your email app is opening with the request filled in. If it does not open, write to insaoviet2006@gmail.com.';
+    if(!n.value.trim()||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(m.value.trim())){s.textContent='Please enter your name and a valid email address.';(n.value.trim()?m:n).focus();return}
+    if(f.querySelector('[name=_honey]').value)return;
+    var subject='Quote request - '+n.value.trim(),data={_subject:subject,_template:'table',_captcha:'false'},lines=[];
+    [].forEach.call(f.querySelectorAll('input,select,textarea'),function(el){if(!el.id)return;var l=f.querySelector('label[for="'+el.id+'"]'),k=l?l.textContent.trim():el.id;data[k]=el.value;lines.push(k+': '+el.value)});
+    data._replyto=m.value.trim();
+    var mailto=function(){location.href='mailto:insaoviet2006@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(lines.join('\n'))};
+    btn.disabled=true;s.textContent='Sending…';
+    fetch('https://formsubmit.co/ajax/insaoviet2006@gmail.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)})
+      .then(function(r){return r.json().then(function(j){if(!r.ok||String(j.success)!=='true')throw j})})
+      .then(function(){s.textContent='Thank you! Your request has been sent. We will reply within one working day.';f.reset()})
+      .catch(function(){s.textContent='We could not send it. Your email app is opening with the request filled in, or write to insaoviet2006@gmail.com.';mailto()})
+      .then(function(){btn.disabled=false});
   });
 })();
 </script>
